@@ -1,0 +1,1 @@
+kexec -l vmlinuz-install --append="ksdevice=enp1s0 inst.ks=http://www.example.com/exampleks.cfg ip=192.168.1.2::192.168.1.1:255.255.255.0:reinstallme.example.com:enp1s0:none nameserver=192.168.1.1" --initrd=./initrd.img-install && kexec -e
